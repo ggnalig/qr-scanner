@@ -113,7 +113,8 @@ window.addEventListener('DOMContentLoaded', () => {
       scanningEle.style.display = 'none';
       appScanningEle.style.display = 'none';
       if (isURL(result)) {
-        dialogOpenBtnElement.style.display = 'inline-block';
+        // dialogOpenBtnElement.style.display = 'inline-block';
+        window.location.href = result
       }
       dialogElement.classList.remove('app__dialog--hide');
       dialogOverlayElement.classList.remove('app__dialog--hide');
