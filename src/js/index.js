@@ -107,15 +107,15 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     QRReader.scan((result) => {
+      if (isURL(result)) {
+        // dialogOpenBtnElement.style.display = 'inline-block';
+        return window.location.href = result
+      }
       copiedText = result;
       textBoxEle.value = result;
       textBoxEle.select();
       scanningEle.style.display = 'none';
       appScanningEle.style.display = 'none';
-      if (isURL(result)) {
-        // dialogOpenBtnElement.style.display = 'inline-block';
-        window.location.href = result
-      }
       dialogElement.classList.remove('app__dialog--hide');
       dialogOverlayElement.classList.remove('app__dialog--hide');
     }, forSelectedPhotos);
