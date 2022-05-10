@@ -13,6 +13,9 @@
     <meta name="application-name" content="QR Scanner" />
     <meta name="msapplication-TileColor" content="#e4e4e4" />
     <meta name="msapplication-TileImage" content="/images/touch/mstile-150x150.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
     <meta name="theme-color" content="#e4e4e4" />
     <link rel="apple-touch-icon" href="/images/touch/apple-touch-icon.jpg" />
     <link rel="icon" type="image/png" href="/images/touch/favicon-32x32.png" sizes="32x32" />
@@ -26,13 +29,22 @@
   <body>
     <div class="app__layout">
       <!-- Header -->
-      <header class="app__header">
-        <!-- <span class="app__header-icon">
+
+      <!-- Original Header -->
+      <!-- <header class="app__header">
+        <span class="app__header-icon">
           <svg fill="#FFFFFF" height="27" viewBox="0 0 24 24" width="27" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z" />
           </svg>
-        </span> -->
+        </span>
+      </header> -->
+
+      <!-- Modified Header -->
+      <header class="app__header">
+        <div class="app__text__container">
+          <h1 style="color: white; z-index: 100;">QR Scan by Cashpop</h1>
+        </div>
       </header>
 
       <main class="app__layout-content">
